@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Recipes</title>
+    <link rel="stylesheet" href="../css/styleg.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Rancho&family=Signika:wght@300;400;600;700&family=Martel:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">Diet<span>AI</span></a>
+
+        <button class="menu-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="chat.html">AI Recipes</a></li>
+        <li><a href="reports.html">Reports</a></li>
+        <li><a href="recipes.html" class="active">Ready Recipes</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="save.html">Saved</a></li> 
+    </ul>
+</nav>
+
+<header>
+    <h1>Healthy Recipes</h1>
+    <p class="page-intro">Nutritious & simple recipes you can prepare easily.</p>
+</header>
+
+<section class="food-report">
+    <input type="text" id="recipe-filter" placeholder="Search by ingredient or name">
+    <select id="recipe-category">
+        <option value="all">All</option>
+        <option value="high-protein">High Protein</option>
+        <option value="breakfast">Breakfast</option>
+        <option value="lunch">Lunch / Dinner</option>
+        <option value="low-carb">Low Carb</option>
+        <option value="sweets">Sweets</option>
+    </select>
+</section>
+
+<section class="container">
+    <div class="report-card" data-category="lunch high-protein" data-ingredients="chicken potatoes beans protein">
+        <div class="report-card-image">
+            <img src="../img/chicken & potatoes.jpeg" alt="Chicken with potatoes and beans">
+        </div>
+        <div class="report-card-content">
+            <h2>Herb Chicken with Baby Potatoes</h2>
+            <p class="preview">Juicy herb-marinated chicken served with roasted potatoes and sautéed green beans.</p>
+        </div>
+        <div class="report-card-actions">
+            <a href="recipe-herb-chicken.html" class="read-more-btn">View Recipe</a>
+            <span class="material-symbols-outlined save-icon" data-id="recipe-herb-chicken">bookmark_add</span>
+        </div>
+    </div>
+
+    <div class="report-card" data-category="breakfast low-carb" data-ingredients="avocado healthy fats keto">
+        <div class="report-card-image">
+            <img src="../img/avocado recp..jpeg" alt="Fresh Avocado For Breakfast">
+        </div>
+        <div class="report-card-content">
+            <h2>Fresh Avocado For Breakfast</h2>
+            <p class="preview">A nutrient-rich avocado loaded with healthy fats & vitamins.</p>
+        </div>
+        <div class="report-card-actions">
+            <a href="recipe-avocado-breakfast.html" class="read-more-btn">View Recipe</a>
+            <span class="material-symbols-outlined save-icon" data-id="recipe-avocado-breakfast">bookmark_add</span>
+        </div>
+    </div>
+
+    <div class="report-card" data-category="breakfast high-protein" data-ingredients="eggs breakfast protein easy">
+        <div class="report-card-image">
+            <img src="../img/egg recp..jpeg" alt="Fried eggs">
+        </div>
+        <div class="report-card-content">
+            <h2>Fried Eggs</h2>
+            <p class="preview">Simple fried eggs, perfect for a high-protein breakfast.</p>
+        </div>
+        <div class="report-card-actions">
+            <a href="recipe-fried-eggs.html" class="read-more-btn">View Recipe</a>
+            <span class="material-symbols-outlined save-icon" data-id="recipe-fried-eggs">bookmark_add</span>
+        </div>
+    </div>
+
+    <div class="report-card" data-category="lunch" data-ingredients="potatoes carbs comfort food">
+        <div class="report-card-image">
+            <img src="../img/potatoes with rosemary and garlic.jpeg" alt="Golden & crispy baby potatoes">
+        </div>
+        <div class="report-card-content">
+            <h2>Golden Baby Potatoes</h2>
+            <p class="preview">Soft & crispy roasted baby potatoes seasoned with herbs.</p>
+        </div>
+        <div class="report-card-actions">
+            <a href="recipe-baby-potatoes.html" class="read-more-btn">View Recipe</a>
+            <span class="material-symbols-outlined save-icon" data-id="recipe-baby-potatoes">bookmark_add</span>
+        </div>
+    </div>
+
+    <div class="report-card" data-category="lunch" data-ingredients="Healthy Beans For Lunch">
+        <div class="report-card-image">
+            <img src="../img/beans rcp..jpeg" alt="beans">
+        </div>
+        <div class="report-card-content">
+            <h2>Healthy Beans For Lunch</h2>
+            <p class="preview">High protein — keto friendly.</p>
+        </div>
+        <div class="report-card-actions">
+            <a href="recipe-healthy-beans.html" class="read-more-btn">View Recipe</a>
+            <span class="material-symbols-outlined save-icon" data-id="recipe-healthy-beans">bookmark_add</span>
+        </div>
+    </div>
+
+    <div class="report-card" data-category="breakfast sweets high-protein" data-ingredients="pan cake + greek yogurt berries honey nuts sweet">
+        <div class="report-card-image">
+            <img src="../img/healthy pan cake .jpeg" alt="Pan Cake + Greek yogurt parfait with berries">
+        </div>
+        <div class="report-card-content">
+            <h2>Pan Cake with Greek Yogurt Berry Parfait</h2>
+            <p class="preview">Layers of Pan Cakes + Greek yogurt, fresh berries, and a drizzle of honey for a light sweet treat.</p>
+        </div>
+        <div class="report-card-actions">
+            <a href="recipe-pancake-parfait.html" class="read-more-btn">View Recipe</a>
+            <span class="material-symbols-outlined save-icon" data-id="recipe-pancake-parfait">bookmark_add</span>
+        </div>
+    </div>
+
+    <div class="report-card" data-category="sweets low-carb" data-ingredients="Healthy Chocolate Cake">
+        <div class="report-card-image">
+            <img src="../img/healthy cake.jpeg" alt="Dark chocolate Healthy Cake">
+        </div>
+        <div class="report-card-content">
+            <h2>Dark Chocolate Almond Bites</h2>
+            <p class="preview">Healthy Cake in dark chocolate — a satisfying low-carb sweet snack.</p>
+        </div>
+        <div class="report-card-actions">
+            <a href="recipe-dark-chocolate-bites.html" class="read-more-btn">View Recipe</a>
+            <span class="material-symbols-outlined save-icon" data-id="recipe-dark-chocolate-bites">bookmark_add</span>
+        </div>
+    </div>
+
+    <div class="report-card" data-category="sweets breakfast" data-ingredients="oats banana cinnamon and chocolate cookies sweet">
+        <div class="report-card-image">
+            <img src="../img/healthy cooki.jpeg" alt="Oatmeal banana and chocolate cookies">
+        </div>
+        <div class="report-card-content">
+            <h2>Oatmeal Banana and Chocolate Cookies</h2>
+            <p class="preview">Soft cookies made with oats, Chocolate and banana, naturally sweet and great with tea.</p>
+        </div>
+        <div class="report-card-actions">
+            <a href="recipe-oat-cookies.html" class="read-more-btn">View Recipe</a>
+            <span class="material-symbols-outlined save-icon" data-id="recipe-oat-cookies">bookmark_add</span>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-col">
+            <h3>Diet<span>AI</span></h3>
+            <p>Your smart companion for healthy diet recipes.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="chat.html">AI Generator</a></li>
+                <li><a href="reports.html">Reports</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Contact</h4>
+            <p>Email: support@dietai.com</p>
+            <p>Phone: +964 700 000 0000</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        © 2025 DietAI — All Rights Reserved
+    </div>
+    </footer>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/recipes style.js"></script>
+</body>
+</html>

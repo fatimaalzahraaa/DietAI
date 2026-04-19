@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Recipe Chat</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Rancho&family=Signika:wght@300;400;600;700&family=Martel:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">Diet<span>AI</span></a>
+
+        <button class="menu-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chat.html">AI Recipes</a></li>
+            <li><a href="reports.html">Reports</a></li>
+            <li><a href="recipes.html">Ready Recipes</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="save.html">Saved</a></li> 
+        </ul>
+    </nav>
+
+
+    <div class="chat-container">
+        <div id="chat-box" class="chat-box"></div>
+        <div class="input-area">
+            <input type="text" id="userInput" placeholder="Write your ingredients..." />
+            <button id="sendBtn">➤</button>
+        </div>
+    </div>
+
+    <script src="../js/navbar.js"></script>
+    <script src="../js/chat.js"></script>
+</body>
+</html>

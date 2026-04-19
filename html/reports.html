@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styleg.css">
+    <title>Food Reports</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Rancho&family=Signika:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">Diet<span>AI</span></a>
+
+        <button class="menu-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chat.html">AI Recipes</a></li>
+            <li><a href="reports.html" class="active">Reports</a></li>
+            <li><a href="recipes.html">Ready Recipes</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="save.html">Saved</a></li> 
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Food Reports</h1>
+        <p class="page-intro">Explore scientific food reports, diet studies, and nutritional insights.</p>
+    </header>
+
+    <section class="food-report">
+        <input type="text" id="filter" placeholder="Search...">
+        <select id="categoryFilter">
+            <option value="all">All</option>
+            <option value="vegan">Vegan</option>
+            <option value="keto">Keto</option>
+            <option value="low-carb">Low Carb</option>
+        </select>
+    </section>
+
+    <section class="container">
+        <div class="report-card" data-category="keto">
+            <div class="report-card-image">
+                <img src="../img/avo.jpg" alt="avocado">
+            </div>
+            <div class="report-card-content">
+                <h2>Nutrition Study on Avocado</h2>
+                <p class="author">Author: Dr. Lina Watson</p>
+                <p class="preview">Avocados are rich in healthy fats and support heart health...</p>
+            </div>
+            <div class="report-card-actions">
+                <a href="avocado.html" class="read-more-btn">Read More</a>
+                <span class="material-symbols-outlined save-icon" data-id="id">bookmark_add</span>
+            </div>
+        </div>
+
+        <div class="report-card" data-category="vegan">
+            <div class="report-card-image">
+                <img src="../img/medi.jpg" alt="Mediterranean diet">
+            </div>
+            <div class="report-card-content">
+                <h2>Study on Mediterranean Diet</h2>
+                <p class="author">Author: Prof. Michael Stone</p>
+                <p class="preview">The Mediterranean diet is linked to reduced heart disease risk...</p>
+            </div>
+            <div class="report-card-actions">
+                <a href="mediterranean.html" class="read-more-btn">Read More</a>
+                <span class="material-symbols-outlined save-icon" data-id="idd">bookmark_add</span>
+            </div>
+        </div>
+
+        <div class="report-card" data-category="low-carb">
+            <div class="report-card-image">
+                <img src="../img/ng.jpg" alt="eggs">
+            </div>
+            <div class="report-card-content">
+                <h2>High-Protein Diet & Weight Loss</h2>
+                <p class="author">Author: Dr. Samuel Green</p>
+                <p class="preview">High-protein diets are known to increase satiety and metabolism...</p>
+            </div>
+            <div class="report-card-actions">
+                <a href="protein.html" class="read-more-btn">Read More</a>
+                <span class="material-symbols-outlined save-icon" data-id="iddd">bookmark_add</span>
+            </div>
+        </div>
+
+        <div class="report-card" data-category="keto">
+            <div class="report-card-image">
+                <img src="../img/keto.jpg" alt="Keto Image">
+            </div>
+            <div class="report-card-content">
+                <h2>Keto Diet and Brain Health</h2>
+                <p class="author">Author: Dr. Emily Carter</p>
+                <p class="preview">Exploring how a ketogenic diet may enhance cognitive function and focus...</p>
+            </div>
+            <div class="report-card-actions">
+                <a href="keto.html" class="read-more-btn">Read More</a>
+                <span class="material-symbols-outlined save-icon" data-id="idddd">bookmark_add</span>
+            </div>
+        </div>
+
+        <div class="report-card" data-category="vegan">
+            <div class="report-card-image">
+                <img src="../img/vegan.jpg" alt="Vegan Image">
+            </div>
+            <div class="report-card-content">
+                <h2>Plant-Based Proteins Study</h2>
+                <p class="author">Author: Prof. Hannah Lee</p>
+                <p class="preview">Investigating the benefits of plant-based proteins on muscle growth and recovery...</p>
+            </div>
+            <div class="report-card-actions">
+                <a href="vegan.html" class="read-more-btn">Read More</a>
+                <span class="material-symbols-outlined save-icon" data-id="iddddd">bookmark_add</span>
+            </div>
+        </div>
+
+        <div class="report-card" data-category="low-carb">
+            <div class="report-card-image">
+                <img src="../img/low.jpg" alt="Low-Carb Image">
+            </div>
+            <div class="report-card-content">
+                <h2>Low-Carb Diet & Blood Sugar</h2>
+                <p class="author">Author: Dr. Daniel Ross</p>
+                <p class="preview">A study on how low-carb diets can stabilize blood sugar and improve insulin sensitivity...</p>
+            </div>
+            <div class="report-card-actions">
+                <a href="lowcarb.html" class="read-more-btn">Read More</a>
+                <span class="material-symbols-outlined save-icon" data-id="idddddd">bookmark_add</span>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Diet<span>AI</span></h3>
+                <p>Your smart companion for healthy diet recipes.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="chat.html">AI Generator</a></li>
+                    <li><a href="reports.html">Reports</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="save.html">Saved</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>Email: support@dietai.com</p>
+                <p>Phone: +964 700 000 0000</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2025 DietAI — All Rights Reserved
+        </div>
+    </footer>
+
+    <script src="../js/navbar.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
